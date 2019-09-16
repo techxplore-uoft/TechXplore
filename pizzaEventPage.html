@@ -45,10 +45,32 @@
 <div class="w3-content w3-padding">
 
   <div class="w3-container w3-padding-32" id="title">
-    <h1 class="w3-center w3-border-bottom w3-border-light-grey w3-padding-16">Upcoming Events</h1>
-    <p class="w3-center">Come back soon for the latest news on our future events!</p>
+    <h1 class="w3-center w3-border-bottom w3-border-light-grey w3-padding-16">Info Session + Pizza!</h1>
+    <p class="w3-center">Want to learn a new programming language? Want to know about what's latest in the world of tech?</p>
+
+    <p class="w3-center">Join TechXplore to learn something new and boast your technical skill sets in the upcoming semester!</p>
+
     <center>
-      <script type="text/javascript" charset="utf-8" src="https://secure.polldaddy.com/p/10400402.js"></script>
+      <div id="eventbrite-widget-container-71533692199"></div>
+
+      <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+      <script type="text/javascript">
+          var exampleCallback = function() {
+              console.log('Order complete!');
+          };
+
+          window.EBWidgets.createWidget({
+              // Required
+              widgetType: 'checkout',
+              eventId: '71533692199',
+              iframeContainerId: 'eventbrite-widget-container-71533692199',
+
+              // Optional
+              iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+              onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+          });
+      </script>
     </center>
   </div> 
 
